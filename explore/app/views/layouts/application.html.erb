@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Backpacking gear</h1>
+      <div class='move'>
+        <h2>Stoves</h2>
+          <ul>
+            <li>
+              <a href='https://www.rei.com/media/495b58a1-280c-4920-87f2-5ece84ad3df4'>Reactor</a>
+            </li>
+            <li>
+              <a href='https://www.amazon.com/Snow-Peak-LiteMax-Stove-Stoves/dp/B002D4X26U'>Snow Peak LiteMax</a>
+            </li>
+            <li>
+              <a href='https://www.rei.com/product/830342/msr-whisperlite-universal-backpacking-stove'>MSR Universal</a>
+            </li>
+          </ul>
+          <p class='nudge'>
+            Different stove types <select>
+                              <option value="can">Canister</option>
+                              <option value="liquid">liquid fuel</option>
+                              <option value="solid">solid fuel</option>
+                            </select>
+          </p>
+      </div>
+      <div class='move'>
+        <h2>Shelters</h2>
+          <ul>
+            <li>
+              <a href='http://www.mountainlaureldesigns.com/shop/popup_image.php?pID=85&image=1'>Grace Tarp</a>
+            </li>
+            <li>
+              <a href='https://www.rei.com/media/27190748-d212-449c-ac88-6b6ce963294a'>Copper Spur 2</a>
+            </li>
+          </ul>
+          <p class='nudge'>
+            Tarp is light, but does not keep bugs away
+          </p>
+          <p class='nudge'>
+            Outdoor sounds
+            <audio controls>
+              <source src="/Frogs.mp3" type="audio/mpeg">
+            </audio>
+          </p>
+        </div>
+      <div class='move'>
+        <h2>Water Filters</h2>
+          <ul>
+            <li>
+              <a href='http://www.h2ofilters.com/saspmiwafisy.html?gclid=CLGa1Ka8wtICFZC1wAodpR0P3g'>Sawyer mini</a>
+            </li>
+            <li>
+              <a href='https://www.amazon.com/MSR-06200-AutoFlow-Gravity-Filter/dp/B00RU3RBNE/ref=sr_1_1?ie=UTF8&qid=1488823722&sr=8-1&keywords=msr+gravity+filter'>MSR Gravity</a>
+            </li>
+          </ul>
+          <p class='nudge'>
+            always nice to have Gravity on your side
+            <button>Click Me</button>
+          </p>
+        </div>
+    <!-- Scripts go here. -->
+    <!-- <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+    <script type="text/javascript" src="global.js"></script> -->
+  </body>
+</html>
